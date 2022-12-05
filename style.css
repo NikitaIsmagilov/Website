@@ -41,6 +41,52 @@
 
 .header-text {
     margin-top: 20px;
+    margin-left: 50px;
+}
+
+/* link */
+
+.link {
+    color: var(--main-black);
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.link>.pointer {
+    width: 20px;
+}
+
+.top-left {
+    color: var(--main-red);
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+
+/* navigation */
+
+.nav {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    gap: 5px;
+}
+
+.nav>a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav>.logo {
+    width: 140px;
+    margin-bottom: 30px;
+    border-radius: 5px;
 }
 
 /* scroll arrow in the bottom of the page */
@@ -89,36 +135,13 @@
     background-image: url("./img/bgMain.jpg"); 
 }
 
-/* navigation */
-
-.header>.nav {
-    position: absolute;
-    left: 10px;
-    top: 10px;
-    display: flex;
-    flex-direction: column;
-    color: white;
-    gap: 5px;
-}
-
-.header>.nav>a {
-    text-decoration: none;
-    color: white;
-}
-
-.header>.nav>.logo {
-    width: 140px;
-    margin-bottom: 30px;
-    border-radius: 5px;
-}
-
 .header>.nav>a {
     cursor: pointer;
 }
 
 /* red btn */
 
-.header>.call-btn {
+.call-btn {
     color: white;
     background-color: var(--main-red);
     position: absolute;
@@ -148,23 +171,12 @@
 
 /* block inside white top */
 
-.header>.top>.top-left {
-    color: var(--main-red);
-    display: flex;
-    flex-direction: column;
-    gap: 3px;
-}
-
-.header>.top>.top-left>.link, .header>.top>.middle {
+.header>.top>.middle {
     color: var(--main-black);
     font-weight: 700;
     display: flex;
     align-items: center;
     gap: 10px;
-}
-
-.header>.top>.top-left>.link>.pointer {
-    width: 20px;
 }
 
 .header>.top>.middle {
@@ -208,18 +220,18 @@
     left: 0;
 }
 
-/* SECOND PAGE - ABOUT US */
+/* SECOND PAGE - HOW WE WORK */
 
-.about-us {
-    background-image: url("./img/bgAboutUs.jpg"); 
+.how-we-work {
+    background-image: url("./img/bgHowWeWork.jpg"); 
 }
 
-.about-us>.cards-wrapper {
+.how-we-work>.cards-wrapper {
     top: 20px;
     right: 20px;
 }
 
-.about-us>.cards-wrapper>.card {
+.how-we-work>.cards-wrapper>.card {
     width: 400px;
     height: 120px;
     border: 5px solid var(--main-red);
@@ -238,7 +250,6 @@
     color: var(--main-black);
     font-size: 50px;
     font-weight: 700;
-    margin-left: 170px;
     margin-top: 80px;
     margin-top: 20px;
 }
@@ -365,4 +376,165 @@
 
 .price>.cards-wrapper .border-cell-left {
     border-left: 1px solid var(--main-black);
+}
+
+.price .table-position {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* measurements block */
+
+.price .measurements {
+    flex-basis: 450px;
+    background-color: rgb(255, 255, 255, 0.7);
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 20px;
+    margin-top: 36px;
+}
+
+.price .measurements>.measurements-header {
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.price .measurements>.measurements-subheader {
+    font-weight: 600;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.price .measurements>.input-btn-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.price .measurements>.input-btn-wrapper>.order-btn {
+    background-color: var(--main-yellow);
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+}
+
+.price .measurements>.input-btn-wrapper>.number-input {
+    border-radius: 5px;
+    padding: 0 10px;
+    flex-basis: 50%;
+    font-size: 18px;
+    outline: none;
+}
+
+.price .measurements>.input-btn-wrapper>.number-input:focus {
+    border: 2px solid var(--main-yellow);
+}
+
+/* SIXTH PAGE - ABOUT US */
+
+.about-us {
+    background-image: url("./img/bgAboutUs.jpg");
+}
+
+.about-us>.text-about-us {
+    color: white;
+    font-size: 20px;
+    line-height: 26px;
+    width: 70%;
+    text-align: justify;
+}
+
+.about-us>.text-about-us.margin-text {
+    margin: 20px 0;
+}
+
+.about-us>.text-about-us.margin-top-text {
+    margin-top: 20px;
+}
+
+.about-us>.footer {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.about-us>.footer>.company-info-text {
+    display: flex;
+    gap: 20px;
+}
+
+.about-us>.footer>.company-info-text>.footer-logo {
+    height: 80px;
+}
+
+.about-us>.footer>.company-info-text .company-info-text {
+    font-size: 16px;
+    text-align: center;
+}
+
+.about-us>.footer>.company-info-text .company-info-text>.logo-text {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.about-us>.footer>.footer-nav {
+    color: var(--main-black);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.about-us>.footer>.footer-nav>a {
+    text-decoration: none;
+    color: var(--main-black);
+}
+
+.about-us>.footer>.footer-nav>.menu {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.about-us>.footer>.send-project-btn-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-us>.footer>.send-project-btn-block>.send-btn {
+    background-color: var(--main-black);
+    color: white;
+    padding: 10px 25px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.about-us>.footer>.contact-info {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.about-us>.footer>.contact-info>.contacts {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.about-us>.footer>.contact-info>.messenger {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-us>.footer>.contact-info>.messenger img {
+    width: 150px;
 }
